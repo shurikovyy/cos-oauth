@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal Chief of Staff is a privately operated assistant for calendar planning, meeting preparation, and personal task management.">
+  <meta name="theme-color" content="#101827">
+  <title>Personal Chief of Staff — Private Personal Assistant</title>
+  <style>
+    :root { color-scheme: light; --ink:#122034; --muted:#526176; --line:#dce3eb; --brand:#215ac5; --brand-dark:#164497; --soft:#f4f7fb; --white:#fff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--white); color:var(--ink); font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:var(--brand-dark); text-underline-offset:3px; }
+    a:focus-visible { outline:3px solid #93b4f4; outline-offset:4px; border-radius:3px; }
+    .wrap { width:min(100% - 40px, 1000px); margin:0 auto; }
+    header { border-bottom:1px solid var(--line); background:#fff; }
+    .topbar { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:14px; min-height:76px; }
+    .brand { display:inline-flex; gap:12px; align-items:center; color:var(--ink); font-weight:750; font-size:17px; text-decoration:none; letter-spacing:-.025em; }
+    .mark { display:grid; place-items:center; width:35px; height:35px; border-radius:10px; color:white; background:var(--ink); font-size:17px; font-weight:800; }
+    nav { display:flex; flex-wrap:wrap; gap:24px; align-items:center; font-size:14px; font-weight:650; }
+    nav a { color:var(--muted); text-decoration:none; }
+    nav a:hover, nav a[aria-current] { color:var(--brand-dark); }
+    main { min-height:calc(100vh - 183px); }
+    .hero { padding:89px 0 70px; border-bottom:1px solid var(--line); background:linear-gradient(160deg,#f4f7ff 0%,#fff 72%); }
+    .eyebrow { display:inline-block; padding:6px 12px; border:1px solid #d1def7; border-radius:999px; color:var(--brand-dark); background:#eaf1ff; font-size:12px; font-weight:750; letter-spacing:.09em; text-transform:uppercase; }
+    h1 { max-width:790px; margin:20px 0 18px; font-size:clamp(35px,5.5vw,61px); line-height:1.12; letter-spacing:-.05em; }
+    .lead { max-width:710px; margin:0 0 28px; font-size:clamp(17px,2.25vw,20px); line-height:1.65; color:var(--muted); }
+    .actions { display:flex; align-items:center; flex-wrap:wrap; gap:16px; }
+    .button { display:inline-block; padding:12px 20px; border-radius:9px; background:var(--brand); color:#fff; text-decoration:none; font-weight:680; }
+    .button:hover { background:var(--brand-dark); }
+    section { padding:55px 0; }
+    h2 { margin:0 0 14px; font-size:clamp(25px,3.4vw,34px); line-height:1.25; letter-spacing:-.03em; }
+    h3 { margin:0 0 10px; font-size:18px; letter-spacing:-.018em; }
+    p { margin:0 0 14px; }
+    .muted { color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-top:26px; }
+    .tile { border:1px solid var(--line); border-radius:15px; padding:24px; background:#fff; }
+    .tile p { color:var(--muted); margin:0; font-size:15px; }
+    .step { display:inline-grid; place-items:center; width:32px; height:32px; margin-bottom:17px; background:#eaf1ff; border-radius:9px; color:var(--brand-dark); font-size:14px; font-weight:800; }
+    .stripe { background:var(--soft); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    .narrow { max-width:760px; }
+    .note { border-left:3px solid var(--brand); padding:2px 0 2px 18px; margin-top:23px; color:var(--muted); }
+    footer { border-top:1px solid var(--line); padding:30px 0 36px; font-size:14px; color:var(--muted); }
+    .foot { display:flex; flex-wrap:wrap; justify-content:space-between; gap:14px; }
+    @media(max-width:700px) { .hero{padding:64px 0 54px} .grid{grid-template-columns:1fr} section{padding:42px 0} .topbar{padding:18px 0} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="./" aria-label="Personal Chief of Staff homepage"><span class="mark" aria-hidden="true">CoS</span><span>Personal Chief of Staff</span></a>
+      <nav aria-label="Main navigation">
+        <a href="./" aria-current="page">Overview</a>
+        <a href="#features">Features</a>
+        <a href="privacy.html">Privacy policy</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Privately operated · Personal-use application</span>
+        <h1>A personal assistant for keeping work and life organized.</h1>
+        <p class="lead">Personal Chief of Staff is a privately operated AI assistant that helps its owner organize calendar events, prepare for meetings, review tasks, and keep track of commitments. It is not a public sign-up service.</p>
+        <div class="actions">
+          <a class="button" href="privacy.html">Read the privacy policy</a>
+          <a href="#how-it-works">How it works →</a>
+        </div>
+      </div>
+    </div>
+    <section id="features">
+      <div class="wrap">
+        <h2>What the assistant does</h2>
+        <p class="muted narrow">The assistant uses connected services only to support the owner's requested planning and productivity workflows.</p>
+        <div class="grid">
+          <article class="tile">
+            <span class="step">01</span>
+            <h3>Calendar & meetings</h3>
+            <p>Reads Google Calendar events, including time, title, description, and participant details, to create daily schedules and prepare useful talking points before meetings. Calendar changes are made only when expressly requested.</p>
+          </article>
+          <article class="tile">
+            <span class="step">02</span>
+            <h3>Tasks & commitments</h3>
+            <p>Reads Google Tasks to help organize priorities. Separately tracks the owner's commitments and follow-ups in a private personal knowledge base.</p>
+          </article>
+          <article class="tile">
+            <span class="step">03</span>
+            <h3>Daily briefings</h3>
+            <p>Creates concise planning summaries and relevant reminders, delivered through the owner's Telegram bot or accessed through a command-line interface.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="stripe" id="how-it-works">
+      <div class="wrap narrow">
+        <h2>How it works</h2>
+        <p>The application operates on a privately managed server. Its primary interface is an AI agent, with a private Obsidian knowledge base for retained notes and commitments.</p>
+        <p>When the owner authorizes Google access, the assistant uses Google Calendar and Google Tasks data to generate requested or scheduled productivity features. Relevant information may be processed by an AI model provider and included in notifications delivered through Telegram. Selected notes may be synchronized to a private GitHub repository.</p>
+        <p class="note">Google access is optional and can be revoked through the owner's Google Account. This informational website has no account registration form and does not embed advertising or analytics trackers.</p>
+      </div>
+    </section>
+    <section>
+      <div class="wrap narrow">
+        <h2>Privacy and contact</h2>
+        <p>For details about data access, processing, retention, third-party services, and deletion requests, please read the <a href="privacy.html">Privacy Policy</a>.</p>
+        <!-- REQUIRED BEFORE PUBLISHING: Replace YOUR_EMAIL@example.com with an email address you consent to publish. -->
+        <p>Questions or requests: <a href="mailto:stove-slept-scope@duck.com">stove-slept-scope@duck.com</a>.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap foot"><span>© 2026 Personal Chief of Staff · Privately operated</span><span><a href="privacy.html">Privacy Policy</a></span></div>
+  </footer>
+</body>
+</html>
